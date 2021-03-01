@@ -9,6 +9,7 @@ import {
     CLEAR_ERRORS
 } from '../types'
 
+// eslint-disable-next-line
 export default (state,action) => {
     switch (action.type){
         case USER_LOADED:
@@ -16,6 +17,7 @@ export default (state,action) => {
                 ...state,
                 isAuthenticated:true,
                 loading:false,
+                user:action.payload
             }
         case REGISTER_SUCCESS:
         case LOGIN_SUCCESS:

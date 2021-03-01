@@ -12,9 +12,7 @@ import {
 
 const AlertState = props =>{
     const initialState = []
-       
     
-
     const [ state, dispatch] = useReducer(alertReducer, initialState)
 
     //Set alert
@@ -27,7 +25,7 @@ const AlertState = props =>{
 
         setTimeout(() => dispatch({type: REMOVE_ALERT, payload:id}), timeout)
     }
-    // remove alert
+    
     
     return (
         <AlertContext.Provider

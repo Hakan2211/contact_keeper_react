@@ -21,11 +21,12 @@ const Register = (props) => {
         }
         // eslint-disable-next-line
     }, [error, isAuthenticated, props.history])
+    
     const [user, setUser] = useState({
-        name:'',
-        email:'',
-        password:'',
-        password2:'',
+        name: '',
+        email: '',
+        password: '',
+        password2: ''
     })
 
     const {name, email, password,password2} = user
